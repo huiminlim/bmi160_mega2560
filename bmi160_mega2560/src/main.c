@@ -32,6 +32,6 @@ int main (void) {
         printf("gx: %d\r\n", gzRaw);
 
         printf("\r\n");
-        delay_ms(1000);
+        delay_ms(10000);
     }
 }

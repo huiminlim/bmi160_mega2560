@@ -23,13 +23,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  000003e8  00000000  00000000  000066a0  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    0001631b  00000000  00000000  00006a88  2**0
+ 10 .debug_str    0001636a  00000000  00000000  00006a88  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    000016b8  00000000  00000000  0001cda3  2**0
+ 11 .debug_loc    000016b8  00000000  00000000  0001cdf2  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000100  00000000  00000000  0001e45b  2**0
+ 12 .debug_ranges 00000100  00000000  00000000  0001e4aa  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_macro  000014ea  00000000  00000000  0001e55b  2**0
+ 13 .debug_macro  000014ea  00000000  00000000  0001e5aa  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -1343,10 +1343,10 @@ int main (void) {
         printf("\r\n");
  6b8:	92 e0       	ldi	r25, 0x02	; 2
  6ba:	60 d0       	rcall	.+192    	; 0x77c <puts>
- 6bc:	6b e0       	ldi	r22, 0x0B	; 11
- 6be:	7b e8       	ldi	r23, 0x8B	; 139
-        delay_ms(1000);
- 6c0:	82 e0       	ldi	r24, 0x02	; 2
+ 6bc:	6b e6       	ldi	r22, 0x6B	; 107
+ 6be:	7e e6       	ldi	r23, 0x6E	; 110
+        delay_ms(10000);
+ 6c0:	89 e1       	ldi	r24, 0x19	; 25
  6c2:	90 e0       	ldi	r25, 0x00	; 0
  6c4:	a7 df       	rcall	.-178    	; 0x614 <__portable_avr_delay_cycles>
  6c6:	0f b6       	in	r0, 0x3f	; 63
